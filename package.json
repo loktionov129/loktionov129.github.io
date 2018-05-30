@@ -1,0 +1,15 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "static .",
+    "static": "static"
+  },
+  "author": "loktionov129",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.10"
+  }
+}
