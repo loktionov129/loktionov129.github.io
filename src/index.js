@@ -4,10 +4,11 @@ import {applyMiddleware, compose, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 import rootReducer from './store/rootReducer';
 import aSideThemeSagaWatcher from './store/Aside/saga/theme';
+import pageLoadProfileSagaWatcher from './store/Page/saga/profile';
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
@@ -18,6 +19,7 @@ const store = createStore(
   )
 );
 sagaMiddleware.run(aSideThemeSagaWatcher);
+sagaMiddleware.run(pageLoadProfileSagaWatcher);
 
 ReactDOM.render(
   <React.StrictMode>

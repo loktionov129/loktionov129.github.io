@@ -1,0 +1,52 @@
+{
+  "profile": {
+    "name": {
+      "key": "Имя",
+      "value": "Александр Локтионов"
+    },
+    "age": {
+      "key": "Возраст",
+      "value": "124"
+    },
+    "city": {
+      "key": "Город",
+      "value": "Москва"
+    },
+    "email": {
+      "key": "Почта",
+      "value": "loktionov129@gmail.com"
+    },
+    "telegram": {
+      "key": "Телеграм",
+      "value": "a_leksandr1"
+    },
+    "github": {
+      "key": "GitHub",
+      "value": "loktionov129"
+    },
+    "level": {
+      "key": "Левел",
+      "value": "Middle"
+    },
+    "english": {
+      "key": "Английский",
+      "value": "Pre-Intermediate"
+    },
+    "specialization": {
+      "key": "Специализация",
+      "value": ".NET"
+    },
+    "salary": {
+      "key": "Зарплата (мес.)",
+      "value": "от 3000$"
+    },
+    "employment": {
+      "key": "Занятость",
+      "value": "полная"
+    },
+    "location": {
+      "key": "Локация работы",
+      "value": "офис"
+    }
+  }
+}
