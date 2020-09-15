@@ -1,6 +1,7 @@
 {
   "name": "loktionov129.github.io",
-  "version": "0.1.0",
+  "author": "Aleksandr Loktionov <loktionov129@gmail.com>",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

@@ -1327,7 +1327,7 @@
   margin-top:20px;
   margin-bottom:26.66666667px;
   background-size:cover;
-  background-image:url(/assets/images/avatar.jpeg)
+  background-image:url('/assets/images/avatar.jpeg')
 }
 .glow{
   --r:0;
