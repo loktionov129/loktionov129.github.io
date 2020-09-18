@@ -27,12 +27,3 @@ export default function Page() {
     </div>
   );
 }
-
-/*
-        <Profile/>
-        <KeyWords/>
-        <WorkExperience/>
-        <ProjectList/>
-        <AboutMe/>
-        <AboutApp/>
- */
