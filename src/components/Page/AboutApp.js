@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 function AboutApp({title, description}) {
   return (
-    <section className="Section no-print" aria-label={title}>
+    <section className="Section" aria-label={title}>
       <h2 className="H H_level_2">{title}</h2>
       <p>
         {description} <a href="https://github.com/miyaokamarina/cv">https://github.com/miyaokamarina/cv</a>

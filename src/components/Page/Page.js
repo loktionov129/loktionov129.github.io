@@ -11,12 +11,28 @@ export default function Page() {
     <div className="Page">
       <article className="Page__Article">
         <Profile/>
+        <div className="no-print">
+          <KeyWords/>
+          <WorkExperience/>
+          <ProjectList/>
+          <AboutMe/>
+          <AboutApp/>
+        </div>
+        <div className="print">
+          <AboutMe/>
+          <ProjectList/>
+          <WorkExperience/>
+        </div>
+      </article>
+    </div>
+  );
+}
+
+/*
+        <Profile/>
         <KeyWords/>
         <WorkExperience/>
         <ProjectList/>
         <AboutMe/>
         <AboutApp/>
-      </article>
-    </div>
-  );
-}
+ */
