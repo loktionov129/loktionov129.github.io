@@ -1,8 +1,9 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-export default function DownloadPanel() {
+function DownloadPanel({locale}) {
   return (
-    <section className="Section" aria-label="Скачать PDF">
+    <section className="Section" aria-label={locale.downloadCv}>
       <div className="Center Download">
         <div className="Center__Inner">
           <a
@@ -12,10 +13,16 @@ export default function DownloadPanel() {
             href="/assets/cv.aleksandr_loktionov.net-developer.pdf"
             download="cv.aleksandr_loktionov.net-developer.pdf"
           >
-            Скачать PDF
+            {locale.downloadCv}
           </a>
         </div>
       </div>
     </section>
   );
 }
+
+const mapStateToProps = state => ({
+  locale: state.page.data.aside
+});
+
+export default connect(mapStateToProps)(DownloadPanel);

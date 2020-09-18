@@ -1,9 +1,9 @@
 import {PAGE_LOAD_PROFILE, PAGE_LOADED_SUCCESS, PAGE_LOADED_ERROR} from './actionTypes';
 
 const initialState = {
-  isLoading: false,
+  isLoading: true,
   hasError: false,
-  data: null
+  data: {}
 };
 
 export default function pageReducer(state = initialState, action) {

@@ -1,67 +1,79 @@
-import React from 'react';
+import React, {useMemo} from 'react';
+import {connect} from 'react-redux';
 
-export default function ProfileInfo() {
+function calculateAgeByBirthday(birthDate) {
+  const birthday = new Date(birthDate);
+  const now = new Date();
+  const age = now.getYear() - birthday.getYear();
+  const hasBirthdayInCurrentYear = now.getMonth() > birthday.getMonth()
+  || (now.getMonth() === birthday.getMonth() && now.getDate() >= birthday.getDate());
+
+  return hasBirthdayInCurrentYear
+    ? age
+    : age - 1;
+}
+
+function ProfileInfo(props) {
+  const birthDate = props.age.birthDate;
+  const age = useMemo(() => calculateAgeByBirthday(birthDate), [birthDate]);
+
   return (
     <>
       <div className="Split__Item">
         <dl className="Properties">
           <div className="Properties__Item">
-            <dt className="Properties__K">Имя:</dt>
-            <dd className="Properties__V">Александр Локтионов</dd>
+            <dt className="Properties__K">{props.name.key}:</dt>
+            <dd className="Properties__V">{props.name.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Возраст:</dt>
-            <dd className="Properties__V">24</dd>
+            <dt className="Properties__K">{props.age.key}:</dt>
+            <dd className="Properties__V">{age}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Город:</dt>
-            <dd className="Properties__V">Москва</dd>
+            <dt className="Properties__K">{props.city.key}:</dt>
+            <dd className="Properties__V">{props.city.value}</dd>
           </div>
-          <div className="Properties__Item">
-            <dt className="Properties__K">Почта:</dt>
-            <dd className="Properties__V"><a
-              href="mailto:loktionov129@gmail.com">loktionov129@gmail.com</a></dd>
-          </div>
-          <div className="Properties__Item">
-            <dt className="Properties__K">Телеграм:</dt>
-            <dd className="Properties__V"><a
-              href="https://t.me/a_leksandr1">@a_leksandr1</a></dd>
-          </div>
-          <div className="Properties__Item">
-            <dt className="Properties__K">GitHub:</dt>
-            <dd className="Properties__V"><a
-              href="https://github.com/loktionov129">@loktionov129</a></dd>
-          </div>
+          {props.socialMedia.map(social => (
+            <div className="Properties__Item" key={social.key}>
+              <dt className="Properties__K">{social.key}:</dt>
+              <dd className="Properties__V">
+                <a href={social.url}>{social.value}</a></dd>
+            </div>
+          ))}
         </dl>
       </div>
       <div className="Split__Item">
         <dl className="Properties">
           <div className="Properties__Item">
-            <dt className="Properties__K">Левел:</dt>
-            <dd className="Properties__V">Middle</dd>
+            <dt className="Properties__K">{props.level.key}:</dt>
+            <dd className="Properties__V">{props.level.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Английский:</dt>
-            <dd className="Properties__V">Pre-Intermediate</dd>
+            <dt className="Properties__K">{props.english.key}:</dt>
+            <dd className="Properties__V">{props.english.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Позиция:</dt>
-            <dd className="Properties__V">.NET Developer</dd>
+            <dt className="Properties__K">{props.specialization.key}:</dt>
+            <dd className="Properties__V">{props.specialization.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Зарплата (мес.):</dt>
-            <dd className="Properties__V">от&nbsp;3&nbsp;000&nbsp;$</dd>
+            <dt className="Properties__K">{props.salary.key}:</dt>
+            <dd className="Properties__V">{props.salary.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Занятость:</dt>
-            <dd className="Properties__V">полная</dd>
+            <dt className="Properties__K">{props.employment.key}:</dt>
+            <dd className="Properties__V">{props.employment.value}</dd>
           </div>
           <div className="Properties__Item">
-            <dt className="Properties__K">Локация работы:</dt>
-            <dd className="Properties__V">офис</dd>
+            <dt className="Properties__K">{props.location.key}:</dt>
+            <dd className="Properties__V">{props.location.value}</dd>
           </div>
         </dl>
       </div>
     </>
   );
 }
+
+const mapStateToProps = state => state.page.data.profile;
+
+export default connect(mapStateToProps, null)(ProfileInfo);

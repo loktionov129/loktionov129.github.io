@@ -1,11 +1,12 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import ProfilePrintable from './ProfilePrintable';
 import ProfileNonPrintable from './ProfileNonPrintable';
 
-export default function Profile() {
+function Profile(props) {
   return (
-    <section className="Section HeadingSection" aria-label="Aleksandr Loktionov CV (.NET Developer)">
-      <h1 className="H H_level_1">Aleksandr Loktionov CV (.NET Developer)</h1>
+    <section className="Section HeadingSection" aria-label={`${props.name.value} CV (${props.specialization.value} Developer)`}>
+      <h1 className="H H_level_1">{props.name.value} CV ({props.specialization.value} Developer)</h1>
       <div className="print">
         <ProfilePrintable/>
       </div>
@@ -18,3 +19,7 @@ export default function Profile() {
     </section>
   );
 }
+
+const mapStateToProps = state => state.page.data.profile;
+
+export default connect(mapStateToProps, null)(Profile);

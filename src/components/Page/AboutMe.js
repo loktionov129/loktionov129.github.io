@@ -1,19 +1,17 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-export default function AboutMe() {
+function AboutMe({title, facts}) {
   return (
-    <section className="Section" aria-label="Обо&nbsp;мне">
-      <h2 className="H H_level_2">Обо&nbsp;мне</h2>
-      <p>- Back-end: ASP.NET MVC / WEB API</p>
-      <p>- Front-end: Angular, RxJS, NgRx / MobX, Bootstrap / Material</p>
-      <p>- Опыт работы с ASP.NET Identity / JWT</p>
-      <p>- Опыт работы с ORM: EntityFramework / Dapper</p>
-      <p>- Опыт работы с СУБД: PostgreSQL / MS SQL</p>
-      <p>- Опыт использования DI / IoC</p>
-      <p>- Опыт разработки Real-time приложений</p>
-      <p>- Опыт контейнеризации приложений с помощью Docker</p>
-      <p>- Понимание архитектуры веб-приложений (трёхслойная архитектура)</p>
-      <p>- Отличное знание принципов SOLID, Объектно-ориентированного проектирования и анализа, CQRS</p>
+    <section className="Section" aria-label={title}>
+      <h2 className="H H_level_2">{title}</h2>
+      {facts.map((fact, index) => (
+        <p key={index}>- {fact}</p>
+      ))}
     </section>
   );
 }
+
+const mapStateToProps = state => state.page.data.aboutMe;
+
+export default connect(mapStateToProps, null)(AboutMe);
