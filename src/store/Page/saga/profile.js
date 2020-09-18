@@ -1,7 +1,8 @@
 import {call, delay, put, takeEvery} from '@redux-saga/core/effects';
 
 function loadProfile(lang) {
-  return fetch(`/assets/data/${lang}.json`);
+  return fetch(`/assets/data/${lang}.json`)
+    .then(response => response.json());
 }
 
 function* pageLoadProfileSagaWorker(action) {
