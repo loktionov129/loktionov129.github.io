@@ -8,7 +8,7 @@ function loadProfile(lang) {
 function* pageLoadProfileSagaWorker(action) {
   try {
     const data = yield call(loadProfile, action.lang);
-    yield delay(0);
+    yield delay(2000);
     yield put({type: "PAGE_LOADED_SUCCESS", data});
   } catch (e) {
     console.warn(e);
