@@ -11,11 +11,14 @@ import aSideThemeSagaWatcher from './store/Aside/saga/theme';
 import pageLoadProfileSagaWatcher from './store/Page/saga/profile';
 
 const sagaMiddleware = createSagaMiddleware();
+const isDev = process.env.NODE_ENV !== 'production' && typeof window === 'object'
+const composeSetup = isDev && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  : compose
 const store = createStore(
   rootReducer,
-  compose(
-    applyMiddleware(sagaMiddleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeSetup(
+    applyMiddleware(sagaMiddleware)
   )
 );
 sagaMiddleware.run(aSideThemeSagaWatcher);
