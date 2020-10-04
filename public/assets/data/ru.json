@@ -137,6 +137,11 @@
         "groupName": "my-repositories",
         "projects": [
           {
+            "link": "https://github.com/my-repositories/test-task__react__fugr-ru",
+            "name": "test-task__react__fugr-ru",
+            "description": "«Users» - Тестовое задание на позицию Frontend React-разработчика."
+          },
+          {
             "link": "https://github.com/my-repositories/ThreeTrees.Metrics",
             "name": "ThreeTrees.Metrics",
             "description": "«CRM Metrics» - System for software development company ThreeTrees."
