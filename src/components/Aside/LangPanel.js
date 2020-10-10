@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {changeLang} from '../../store/Aside/actions';
+import {getLang} from '../../store/Aside/selectors';
+import {getProfile} from '../../store/Page/selectors';
 
 function LangPanel({lang, locale, setRussian, setEnglish}) {
   return (
@@ -29,8 +31,8 @@ function LangPanel({lang, locale, setRussian, setEnglish}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data[state.aSide.lang].aside,
-  lang: state.aSide.lang
+  locale: getProfile(state).aside,
+  lang: getLang(state)
 });
 
 const mapDispatchToProps = dispatch => ({

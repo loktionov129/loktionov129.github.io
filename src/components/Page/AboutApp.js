@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function AboutApp({title, description}) {
   return (
@@ -13,6 +14,6 @@ function AboutApp({title, description}) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].aboutApp;
+const mapStateToProps = state => getProfile(state).aboutApp;
 
 export default connect(mapStateToProps, null)(AboutApp);

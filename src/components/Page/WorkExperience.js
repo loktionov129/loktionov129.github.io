@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function WorkExperience({title, list, responsibilities, techStack}) {
   return (
@@ -29,6 +30,6 @@ function WorkExperience({title, list, responsibilities, techStack}) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].workExperience;
+const mapStateToProps = state => getProfile(state).workExperience;
 
 export default connect(mapStateToProps, null)(WorkExperience);

@@ -1,5 +1,6 @@
 import React, {useMemo} from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function calculateAgeByBirthday(birthDate) {
   const birthday = new Date(birthDate);
@@ -74,6 +75,6 @@ function ProfileInfo(props) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].profile;
+const mapStateToProps = state => getProfile(state).profile;
 
 export default connect(mapStateToProps, null)(ProfileInfo);

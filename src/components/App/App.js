@@ -5,6 +5,7 @@ import Loader from '../Loader/Loader';
 import Page from '../Page/Page';
 import Aside from '../Aside/Aside';
 import {loadProfile} from '../../store/Page/actions';
+import {getHasError, getIsLoading} from '../../store/Page/selectors';
 
 function App(props) {
   const {loadProfile} = props;
@@ -31,8 +32,8 @@ function App(props) {
 }
 
 const mapStateToProps = state => ({
-  isLoading: state.page.isLoading,
-  hasError: state.page.hasError
+  isLoading: getIsLoading(state),
+  hasError: getHasError(state)
 });
 const mapDispatchToProps = {
   loadProfile

@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function ProjectList({title, items}) {
   return (
@@ -23,6 +24,6 @@ function ProjectList({title, items}) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].projectList;
+const mapStateToProps = state => getProfile(state).projectList;
 
 export default connect(mapStateToProps, null)(ProjectList);

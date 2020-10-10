@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function DownloadPanel({locale}) {
   return (
@@ -22,7 +23,7 @@ function DownloadPanel({locale}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data[state.aSide.lang].aside
+  locale: getProfile(state).aside
 });
 
 export default connect(mapStateToProps)(DownloadPanel);

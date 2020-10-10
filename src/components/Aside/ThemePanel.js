@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {changeTheme} from '../../store/Aside/actions';
+import {getTheme} from '../../store/Aside/selectors';
+import {getProfile} from '../../store/Page/selectors';
 
 function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
   return (
@@ -10,7 +12,7 @@ function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
         <span
           role="button"
           tabIndex="0"
-          data-scheme="dark"
+          data-scheme={theme}
           className={`Buttons__Item ${theme === 'dark' ? 'checked' : ''}`}
           onClick={setDarkTheme}
         >
@@ -20,7 +22,7 @@ function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
         <span
           role="button"
           tabIndex="0"
-          data-scheme="light"
+          data-scheme={theme}
           className={`Buttons__Item ${theme === 'light' ? 'checked' : ''}`}
           onClick={setLightTheme}
         >
@@ -32,8 +34,8 @@ function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data[state.aSide.lang].aside,
-  theme: state.aSide.theme
+  locale: getProfile(state).aside,
+  theme: getTheme(state)
 });
 
 const mapDispatchToProps = dispatch => ({

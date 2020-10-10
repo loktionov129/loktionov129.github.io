@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ProfilePrintable from './ProfilePrintable';
 import ProfileNonPrintable from './ProfileNonPrintable';
+import {getProfile} from '../../store/Page/selectors';
 
 function Profile(props) {
   return (
@@ -20,6 +21,6 @@ function Profile(props) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].profile;
+const mapStateToProps = state => getProfile(state).profile;
 
 export default connect(mapStateToProps, null)(Profile);

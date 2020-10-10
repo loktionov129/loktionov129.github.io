@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getProfile} from '../../store/Page/selectors';
 
 function KeyWords({title, buzzWords}) {
   return (
@@ -14,6 +15,6 @@ function KeyWords({title, buzzWords}) {
   );
 }
 
-const mapStateToProps = state => state.page.data[state.aSide.lang].keywords;
+const mapStateToProps = state => getProfile(state).keywords;
 
 export default connect(mapStateToProps, null)(KeyWords);
