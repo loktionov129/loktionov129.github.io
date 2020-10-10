@@ -29,7 +29,7 @@ function LangPanel({lang, locale, setRussian, setEnglish}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data.aside,
+  locale: state.page.data[state.aSide.lang].aside,
   lang: state.aSide.lang
 });
 

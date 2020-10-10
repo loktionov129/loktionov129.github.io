@@ -12,6 +12,6 @@ function AboutMe({title, facts}) {
   );
 }
 
-const mapStateToProps = state => state.page.data.aboutMe;
+const mapStateToProps = state => state.page.data[state.aSide.lang].aboutMe;
 
 export default connect(mapStateToProps, null)(AboutMe);

@@ -22,7 +22,7 @@ function DownloadPanel({locale}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data.aside
+  locale: state.page.data[state.aSide.lang].aside
 });
 
 export default connect(mapStateToProps)(DownloadPanel);

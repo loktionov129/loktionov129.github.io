@@ -7,11 +7,11 @@ import Aside from '../Aside/Aside';
 import {loadProfile} from '../../store/Page/actions';
 
 function App(props) {
-  const {loadProfile, lang} = props;
+  const {loadProfile} = props;
 
   useEffect(() => {
-    loadProfile(lang);
-  }, [loadProfile, lang]);
+    loadProfile();
+  }, [loadProfile]);
 
   if (props.isLoading) {
     return (
@@ -32,8 +32,7 @@ function App(props) {
 
 const mapStateToProps = state => ({
   isLoading: state.page.isLoading,
-  hasError: state.page.hasError,
-  lang: state.aSide.lang
+  hasError: state.page.hasError
 });
 const mapDispatchToProps = {
   loadProfile

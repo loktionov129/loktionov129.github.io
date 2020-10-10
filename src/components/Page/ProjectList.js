@@ -23,6 +23,6 @@ function ProjectList({title, items}) {
   );
 }
 
-const mapStateToProps = state => state.page.data.projectList;
+const mapStateToProps = state => state.page.data[state.aSide.lang].projectList;
 
 export default connect(mapStateToProps, null)(ProjectList);

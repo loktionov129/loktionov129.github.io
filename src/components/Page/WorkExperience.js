@@ -29,6 +29,6 @@ function WorkExperience({title, list, responsibilities, techStack}) {
   );
 }
 
-const mapStateToProps = state => state.page.data.workExperience;
+const mapStateToProps = state => state.page.data[state.aSide.lang].workExperience;
 
 export default connect(mapStateToProps, null)(WorkExperience);

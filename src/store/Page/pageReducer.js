@@ -3,7 +3,10 @@ import {PAGE_LOAD_PROFILE, PAGE_LOADED_SUCCESS, PAGE_LOADED_ERROR} from './actio
 const initialState = {
   isLoading: true,
   hasError: false,
-  data: {}
+  data: {
+    ru: {},
+    en: {}
+  }
 };
 
 export default function pageReducer(state = initialState, action) {

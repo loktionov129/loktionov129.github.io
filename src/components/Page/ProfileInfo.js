@@ -74,6 +74,6 @@ function ProfileInfo(props) {
   );
 }
 
-const mapStateToProps = state => state.page.data.profile;
+const mapStateToProps = state => state.page.data[state.aSide.lang].profile;
 
 export default connect(mapStateToProps, null)(ProfileInfo);

@@ -14,6 +14,6 @@ function KeyWords({title, buzzWords}) {
   );
 }
 
-const mapStateToProps = state => state.page.data.keywords;
+const mapStateToProps = state => state.page.data[state.aSide.lang].keywords;
 
 export default connect(mapStateToProps, null)(KeyWords);

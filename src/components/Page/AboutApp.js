@@ -13,6 +13,6 @@ function AboutApp({title, description}) {
   );
 }
 
-const mapStateToProps = state => state.page.data.aboutApp;
+const mapStateToProps = state => state.page.data[state.aSide.lang].aboutApp;
 
 export default connect(mapStateToProps, null)(AboutApp);

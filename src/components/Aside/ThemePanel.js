@@ -32,7 +32,7 @@ function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
 }
 
 const mapStateToProps = state => ({
-  locale: state.page.data.aside,
+  locale: state.page.data[state.aSide.lang].aside,
   theme: state.aSide.theme
 });
 
