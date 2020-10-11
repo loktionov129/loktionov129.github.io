@@ -1,8 +1,8 @@
-import {ASIDE_CHANGE_LANG, ASIDE_CHANGE_THEME} from './actionTypes';
+import { ASIDE_CHANGE_LANG, ASIDE_CHANGE_THEME } from './actionTypes';
 
 const initialState = {
   theme: 'dark',
-  lang: 'ru'
+  lang: 'ru',
 };
 
 export default function aSideReducer(state = initialState, action) {
@@ -10,16 +10,16 @@ export default function aSideReducer(state = initialState, action) {
     case ASIDE_CHANGE_LANG:
       return {
         ...state,
-        lang: action.lang
+        lang: action.lang,
       };
 
     case ASIDE_CHANGE_THEME:
       return {
         ...state,
-        theme: action.theme
+        theme: action.theme,
       };
 
     default:
-      return state
+      return state;
   }
 }

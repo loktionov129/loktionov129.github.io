@@ -6,9 +6,9 @@ import DownloadPanel from './DownloadPanel';
 export default function Aside() {
   return (
     <aside className="Aside no-print gte-l1">
-      <LangPanel/>
-      <ThemePanel/>
-      <DownloadPanel/>
+      <LangPanel />
+      <ThemePanel />
+      <DownloadPanel />
     </aside>
   );
 }

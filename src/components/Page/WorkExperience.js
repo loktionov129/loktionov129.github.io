@@ -1,26 +1,42 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {getProfile} from '../../store/Page/selectors';
+import { connect } from 'react-redux';
+import { getProfile } from '../../store/Page/selectors';
 
-function WorkExperience({title, list, responsibilities, techStack}) {
+function WorkExperience({
+  title, list, responsibilities, techStack,
+}) {
   return (
     <section className="Section" aria-label={title}>
       <h2 className="H H_level_2">{title}</h2>
-      {list.map(item => (
+      {list.map((item) => (
         <section className="Section" aria-label={item.specialization} key={item.name}>
           <h3 className="H H_level_3">
             {item.specialization}
             <div className="Subtitle">
-              <a href={item.link}>{item.name}</a>, {item.duration}</div>
+              <a href={item.link}>{item.name}</a>
+              {', '}
+              {item.duration}
+            </div>
           </h3>
-          <p><strong className="Xps__Strong">{responsibilities}:</strong></p>
+          <p>
+            <strong className="Xps__Strong">
+              {responsibilities}
+              :
+            </strong>
+          </p>
           <p>{item.description}</p>
           {item.stack && item.stack.length && (
             <>
               <br />
-              <p>{techStack}:</p>
+              <p>
+                {techStack}
+                :
+              </p>
               {item.stack.map((line, index) => (
-                <p key={index}>- {line}</p>
+                <p key={index}>
+                  {'- '}
+                  {line}
+                </p>
               ))}
             </>
           )}
@@ -30,6 +46,6 @@ function WorkExperience({title, list, responsibilities, techStack}) {
   );
 }
 
-const mapStateToProps = state => getProfile(state).workExperience;
+const mapStateToProps = (state) => getProfile(state).workExperience;
 
 export default connect(mapStateToProps, null)(WorkExperience);

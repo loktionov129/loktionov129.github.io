@@ -6,7 +6,7 @@ export default function ProfileNonPrintable() {
     <>
       <div className="Center">
         <div className="Center__Inner">
-          <div className="Avatar"/>
+          <div className="Avatar" />
         </div>
       </div>
       <div className="Center">

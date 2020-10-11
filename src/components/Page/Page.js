@@ -10,18 +10,18 @@ export default function Page() {
   return (
     <div className="Page">
       <article className="Page__Article">
-        <Profile/>
+        <Profile />
         <div className="no-print">
-          <KeyWords/>
-          <WorkExperience/>
-          <ProjectList/>
-          <AboutMe/>
-          <AboutApp/>
+          <KeyWords />
+          <WorkExperience />
+          <ProjectList />
+          <AboutMe />
+          <AboutApp />
         </div>
         <div className="print">
-          <AboutMe/>
-          <ProjectList/>
-          <WorkExperience/>
+          <AboutMe />
+          <ProjectList />
+          <WorkExperience />
         </div>
       </article>
     </div>

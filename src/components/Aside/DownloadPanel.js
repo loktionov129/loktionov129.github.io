@@ -1,8 +1,8 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {getProfile} from '../../store/Page/selectors';
+import { connect } from 'react-redux';
+import { getProfile } from '../../store/Page/selectors';
 
-function DownloadPanel({locale}) {
+function DownloadPanel({ locale }) {
   return (
     <section className="Section" aria-label={locale.downloadCv}>
       <div className="Center Download">
@@ -22,8 +22,8 @@ function DownloadPanel({locale}) {
   );
 }
 
-const mapStateToProps = state => ({
-  locale: getProfile(state).aside
+const mapStateToProps = (state) => ({
+  locale: getProfile(state).aside,
 });
 
 export default connect(mapStateToProps)(DownloadPanel);

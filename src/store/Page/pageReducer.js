@@ -1,16 +1,16 @@
-import {PAGE_LOADED_SUCCESS} from './actionTypes';
+import { PAGE_LOADED_SUCCESS } from './actionTypes';
 
 const initialState = {
-  data: null
+  data: null,
 };
 
 export default function pageReducer(state = initialState, action) {
   switch (action.type) {
     case PAGE_LOADED_SUCCESS:
       return {
-        data: action.data
+        data: action.data,
       };
 
-    default: return state
+    default: return state;
   }
 }

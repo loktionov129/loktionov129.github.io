@@ -1,9 +1,9 @@
-import { createSelector } from 'reselect'
-import {getLang} from '../Aside/selectors';
+import { createSelector } from 'reselect';
+import { getLang } from '../Aside/selectors';
 
-const getData = state => state.page.data;
+const getData = (state) => state.page.data;
 export const getProfile = createSelector(
-    getLang,
-    getData,
-    (lang, data) => data[lang]
-)
+  getLang,
+  getData,
+  (lang, data) => data[lang],
+);

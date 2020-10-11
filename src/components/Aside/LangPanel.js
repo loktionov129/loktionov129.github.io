@@ -1,10 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {changeLang} from '../../store/Aside/actions';
-import {getLang} from '../../store/Aside/selectors';
-import {getProfile} from '../../store/Page/selectors';
+import { connect } from 'react-redux';
+import { changeLang } from '../../store/Aside/actions';
+import { getLang } from '../../store/Aside/selectors';
+import { getProfile } from '../../store/Page/selectors';
 
-function LangPanel({lang, locale, setRussian, setEnglish}) {
+function LangPanel({
+  lang, locale, setRussian, setEnglish,
+}) {
   return (
     <section className="Section language" aria-label={locale.lang}>
       <h2 className="H H_level_2">{locale.lang}</h2>
@@ -30,14 +32,14 @@ function LangPanel({lang, locale, setRussian, setEnglish}) {
   );
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   locale: getProfile(state).aside,
-  lang: getLang(state)
+  lang: getLang(state),
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   setEnglish: () => dispatch(changeLang('en')),
-  setRussian: () => dispatch(changeLang('ru'))
+  setRussian: () => dispatch(changeLang('ru')),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LangPanel);

@@ -1,10 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {changeTheme} from '../../store/Aside/actions';
-import {getTheme} from '../../store/Aside/selectors';
-import {getProfile} from '../../store/Page/selectors';
+import { connect } from 'react-redux';
+import { changeTheme } from '../../store/Aside/actions';
+import { getTheme } from '../../store/Aside/selectors';
+import { getProfile } from '../../store/Page/selectors';
 
-function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
+function ThemePanel({
+  locale, theme, setDarkTheme, setLightTheme,
+}) {
   return (
     <section className="Section scheme" aria-label={locale.theme.title}>
       <h2 className="H H_level_2">{locale.theme.title}</h2>
@@ -33,14 +35,14 @@ function ThemePanel({locale, theme, setDarkTheme, setLightTheme}) {
   );
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   locale: getProfile(state).aside,
-  theme: getTheme(state)
+  theme: getTheme(state),
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   setDarkTheme: () => dispatch(changeTheme('dark')),
-  setLightTheme: () => dispatch(changeTheme('light'))
+  setLightTheme: () => dispatch(changeTheme('light')),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ThemePanel);
