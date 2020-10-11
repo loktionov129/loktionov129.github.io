@@ -5,7 +5,7 @@ import { getProfile } from '../../store/Page/selectors';
 function KeyWords({ title, buzzWords }) {
   return (
     <section className="Section" aria-label={title}>
-      <h2 className="H H_level_2">{title}</h2>
+      <div className="H H_level_2">{title}</div>
       <ul className="Chips Buzzwords">
         {buzzWords.map((item) => (
           <li className={`static Chips__Item ${item.status}`} key={item.name}>{item.name}</li>

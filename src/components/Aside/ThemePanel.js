@@ -9,7 +9,7 @@ function ThemePanel({
 }) {
   return (
     <section className="Section scheme" aria-label={locale.theme.title}>
-      <h2 className="H H_level_2">{locale.theme.title}</h2>
+      <div className="H H_level_2">{locale.theme.title}</div>
       <div className="Buttons primary">
         <span
           role="button"

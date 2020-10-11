@@ -87,7 +87,7 @@
 .Section:first-child{
   margin-top:0
 }
-.Section>h1:first-child,.Section>h2:first-child,.Section>h3:first-child,.Section>h4:first-child,.Section>h5:first-child,.Section>h6:first-child{
+.Section>.H:first-child{
   margin-bottom:10px
 }
 @media print{

@@ -7,14 +7,14 @@ import { getProfile } from '../../store/Page/selectors';
 function Profile(props) {
   return (
     <section className="Section HeadingSection" aria-label={`${props.name.value} CV (${props.specialization.value} Developer)`}>
-      <h1 className="H H_level_1">
+      <div className="H H_level_1">
         {props.name.value}
         {' '}
         CV (
         {props.specialization.value}
         {' '}
         Developer)
-      </h1>
+      </div>
       <div className="print">
         <ProfilePrintable />
       </div>

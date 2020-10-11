@@ -9,7 +9,7 @@ function LangPanel({
 }) {
   return (
     <section className="Section language" aria-label={locale.lang}>
-      <h2 className="H H_level_2">{locale.lang}</h2>
+      <div className="H H_level_2">{locale.lang}</div>
       <div className="Buttons primary">
         <span
           role="button"

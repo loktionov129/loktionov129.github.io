@@ -5,11 +5,11 @@ import { getProfile } from '../../store/Page/selectors';
 function ProjectList({ title, items }) {
   return (
     <section className="Section" aria-label={title}>
-      <h2 className="H H_level_2">{title}</h2>
+      <div className="H H_level_2">{title}</div>
       <section className="Section">
         {items.map((item) => (
           <React.Fragment key={item.groupName}>
-            <h3 className="H H_level_3">{item.groupName}</h3>
+            <div className="H H_level_3">{item.groupName}</div>
             <ul className="Ul">
               {item.projects.map((project) => (
                 <li className="Ul__Item" key={project.name}>

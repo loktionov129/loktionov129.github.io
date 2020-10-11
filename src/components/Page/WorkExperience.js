@@ -7,17 +7,17 @@ function WorkExperience({
 }) {
   return (
     <section className="Section" aria-label={title}>
-      <h2 className="H H_level_2">{title}</h2>
+      <div className="H H_level_2">{title}</div>
       {list.map((item) => (
         <section className="Section" aria-label={item.specialization} key={item.name}>
-          <h3 className="H H_level_3">
+          <div className="H H_level_3">
             {item.specialization}
             <div className="Subtitle">
               <a href={item.link}>{item.name}</a>
               {', '}
               {item.duration}
             </div>
-          </h3>
+          </div>
           <p>
             <strong className="Xps__Strong">
               {responsibilities}

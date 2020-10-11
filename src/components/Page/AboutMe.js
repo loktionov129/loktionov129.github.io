@@ -5,7 +5,7 @@ import { getProfile } from '../../store/Page/selectors';
 function AboutMe({ title, facts }) {
   return (
     <section className="Section" aria-label={title}>
-      <h2 className="H H_level_2">{title}</h2>
+      <div className="H H_level_2">{title}</div>
       {facts.map((fact, index) => (
         <p key={index}>
           {'- '}

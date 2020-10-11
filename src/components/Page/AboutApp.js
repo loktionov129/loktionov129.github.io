@@ -5,7 +5,7 @@ import { getProfile } from '../../store/Page/selectors';
 function AboutApp({ title, description }) {
   return (
     <section className="Section" aria-label={title}>
-      <h2 className="H H_level_2">{title}</h2>
+      <div className="H H_level_2">{title}</div>
       <p>
         {description}
         {' '}
