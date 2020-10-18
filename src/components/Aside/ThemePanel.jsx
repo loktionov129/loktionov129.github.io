@@ -17,6 +17,7 @@ function ThemePanel({
           data-scheme={theme}
           className={`Buttons__Item ${theme === 'dark' ? 'checked' : ''}`}
           onClick={setDarkTheme}
+          onKeyDown={setDarkTheme}
         >
           {locale.theme.dark}
         </span>
@@ -27,6 +28,7 @@ function ThemePanel({
           data-scheme={theme}
           className={`Buttons__Item ${theme === 'light' ? 'checked' : ''}`}
           onClick={setLightTheme}
+          onKeyDown={setLightTheme}
         >
           {locale.theme.light}
         </span>

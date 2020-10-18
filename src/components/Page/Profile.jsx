@@ -4,14 +4,14 @@ import ProfilePrintable from './ProfilePrintable';
 import ProfileNonPrintable from './ProfileNonPrintable';
 import { getProfile } from '../../store/Page/selectors';
 
-function Profile(props) {
+function Profile({ name, specialization }) {
   return (
-    <section className="Section HeadingSection" aria-label={`${props.name.value} CV (${props.specialization.value} Developer)`}>
+    <section className="Section HeadingSection" aria-label={`${name.value} CV (${specialization.value} Developer)`}>
       <div className="H H_level_1">
-        {props.name.value}
+        {name.value}
         {' '}
         CV (
-        {props.specialization.value}
+        {specialization.value}
         {' '}
         Developer)
       </div>

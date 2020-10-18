@@ -15,6 +15,7 @@ function LangPanel({
           role="button"
           tabIndex="0"
           onClick={setRussian}
+          onKeyDown={setRussian}
           className={`Buttons__Item LangSwitcher__Item_lang_ru ${lang === 'ru' ? 'checked' : ''}`}
         >
           Русский
@@ -23,6 +24,7 @@ function LangPanel({
           role="button"
           tabIndex="0"
           onClick={setEnglish}
+          onKeyDown={setEnglish}
           className={`Buttons__Item LangSwitcher__Item_lang_en ${lang === 'en' ? 'checked' : ''}`}
         >
           English

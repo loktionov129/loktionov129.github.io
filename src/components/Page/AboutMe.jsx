@@ -6,8 +6,8 @@ function AboutMe({ title, facts }) {
   return (
     <section className="Section" aria-label={title}>
       <div className="H H_level_2">{title}</div>
-      {facts.map((fact, index) => (
-        <p key={index}>
+      {facts.map((fact) => (
+        <p key={fact}>
           {'- '}
           {fact}
         </p>
