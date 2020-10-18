@@ -73,6 +73,7 @@
       {"name": "PostgreSQL", "status": "info"},
       {"name": "MSSQL", "status": "info"},
       {"name": "Angular", "status": "ok"},
+      {"name": "ReactJS", "status": "ok"},
       {"name": "ES6/7/8/Next", "status": "ok"},
       {"name": "Webpack", "status": "ok"},
       {"name": "TypeScript", "status": "ok"},
@@ -170,13 +171,28 @@
     "techStack": "Technology Stack",
     "list": [
       {
+        "name": "Tinkoff Bank",
+        "specialization": "Full Stack Developer",
+        "link": "https://tinkoff.ru/",
+        "duration": "Moscow, February 2019 — until now.",
+        "description": "Cloud call center platform development (WebOffice).",
+        "stack": [
+          ".NET Core 3.x",
+          "xUnit / Moq",
+          "Entity Framework",
+          "Oracle / MongoDB / RabbitMQ",
+          "Angular / NgRx",
+          "Karma / Jasmine / ts-mockito"
+        ]
+      },
+      {
         "name": "Magora Systems",
         "specialization": "Backend .NET Developer",
         "link": "http://magora-systems.com",
-        "duration": "Novosibirsk, August 2018 — until now.",
+        "duration": "Novosibirsk, August 2018 — February 2019 until now.",
         "description": "Social network development.",
         "stack": [
-          ".Net Core 2+",
+          ".NET Core 2.x",
           "PostgreSQL",
           "Firebase",
           "RabbitMQ"
@@ -184,7 +200,7 @@
       },
       {
         "name": "Saritasa",
-        "specialization": ".NET Developer",
+        "specialization": "Full Stack Developer",
         "link": "https://www.saritasa.com/",
         "duration": "Krasnoyarsk, April 2018 — August 2018.",
         "description": "Development of a digital platform for restaurants.",

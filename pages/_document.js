@@ -42,7 +42,6 @@ function Icons() {
   );
 }
 
-// remove public/index.html and use this template instead.
 export default class MyDocument extends Document {
   render() {
     return (

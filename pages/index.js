@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Aleksandr Loktionov's CV (Full Stack .NET Developer)</title>
+        <title>Aleksandr Loktionov's CV (Full Stack Developer)</title>
       </Head>
       <App />
     </>
