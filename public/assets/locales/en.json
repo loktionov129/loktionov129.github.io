@@ -175,7 +175,14 @@
         "specialization": "Full Stack Developer",
         "link": "https://tinkoff.ru/",
         "duration": "Moscow, February 2019 — until now.",
-        "description": "Cloud call center platform development (WebOffice).",
+        "description": [
+          "Design and development of back-end services using ASP.NET Core.",
+          "Developing a shared library of components.",
+          "Integration with external systems.",
+          "Configuring Docker, Kubernetes, CI / CD.",
+          "Code review of colleagues and contractors.",
+          "Junior developer mentoring."
+        ],
         "stack": [
           ".NET Core 3.x",
           "xUnit / Moq",
@@ -190,7 +197,9 @@
         "specialization": "Backend .NET Developer",
         "link": "http://magora-systems.com",
         "duration": "Novosibirsk, August 2018 — February 2019 until now.",
-        "description": "Social network development.",
+        "description": [
+          "Social network development."
+        ],
         "stack": [
           ".NET Core 2.x",
           "PostgreSQL",
@@ -203,7 +212,9 @@
         "specialization": "Full Stack Developer",
         "link": "https://www.saritasa.com/",
         "duration": "Krasnoyarsk, April 2018 — August 2018.",
-        "description": "Development of a digital platform for restaurants.",
+        "description": [
+          "Development of a digital platform for restaurants."
+        ],
         "stack": [
           "C# / ASP.NET WEB API / WCF",
           "Entity Framework / Dapper",
@@ -216,7 +227,9 @@
         "specialization": "Full Stack Developer",
         "link": "https://orionnet.ru/krk",
         "duration": "Krasnoyarsk, August 2017 – March 2018 г.",
-        "description": "Development of a CRM system for internal corporate use.",
+        "description": [
+          "Development of a CRM system for internal corporate use."
+        ],
         "stack": [
           "Angular",
           "TypeScript",
@@ -232,7 +245,11 @@
         "specialization": "Web Master",
         "link": "#",
         "duration": "Krasnoyarsk, February 2016 — August 2017",
-        "description": "Development of sites on WordPress. Writing markup of PSD layouts / editing of an existing design. Setup and configure third-party WordPress plugins."
+        "description": [
+          "Development of sites on WordPress.",
+          "Writing markup of PSD layouts / editing of an existing design.",
+          "Setup and configure third-party WordPress plugins."
+        ]
       }
     ]
   }

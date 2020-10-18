@@ -176,7 +176,14 @@
         "specialization": "Full Stack Developer",
         "link": "https://tinkoff.ru/",
         "duration": "Москва, февраль 2019 — наст. время",
-        "description": "Разработка платформы облачного колл-центра (WebOffice)",
+        "description": [
+          "Проектирование и разработка back-end сервисов с использованием ASP.NET Core.",
+          "Разработка общей библиотеки компонентов.",
+          "Интеграция с внешними системами.",
+          "Настройка Docker, Kubernetes, CI/CD.",
+          "Code review коллег и подрядчиков.",
+          "Менторинг младшего разработчика."
+        ],
         "stack": [
           ".NET Core 3.x",
           "xUnit / Moq",
@@ -191,7 +198,9 @@
         "specialization": "Backend .NET Developer",
         "link": "http://magora-systems.com",
         "duration": "Новосибирск, август 2018 г. – февраль 2019",
-        "description": "Разработка социальной сети.",
+        "description": [
+          "Разработка социальной сети."
+        ],
         "stack": [
           ".NET Core 2.x",
           "PostgreSQL",
@@ -204,7 +213,9 @@
         "specialization": "Full Stack Developer",
         "link": "https://www.saritasa.com/",
         "duration": "Красноярск, апрель 2018 г. – август 2018 г.",
-        "description": "Разработка цифровой платформы для ресторанов.",
+        "description": [
+          "Разработка цифровой платформы для ресторанов."
+        ],
         "stack": [
           "C# / ASP.NET WEB API / WCF",
           "Entity Framework / Dapper",
@@ -217,7 +228,9 @@
         "specialization": "Full Stack Developer",
         "link": "https://orionnet.ru/krk",
         "duration": "Красноярск, август 2017 г. – март 2018 г.",
-        "description": "Разработка CRM-системы для внутреннего корпоративного пользования.",
+        "description": [
+          "Разработка CRM-системы для внутреннего корпоративного пользования."
+        ],
         "stack": [
           "Angular",
           "TypeScript",
@@ -233,7 +246,11 @@
         "specialization": "Веб-Мастер",
         "link": "#",
         "duration": "Красноярск, февраль 2016 г. – август 2017 г.",
-        "description": "Разработка и поддержка веб-сайтов на WordPress. Вёрстка PSD макетов / правка уже существующего дизайна. Подключение сторонних WordPress-плагинов."
+        "description": [
+          "Разработка и поддержка веб-сайтов на WordPress.",
+          "Вёрстка PSD макетов / правка уже существующего дизайна.",
+          "Подключение сторонних WordPress-плагинов."
+        ]
       }
     ]
   }

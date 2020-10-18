@@ -24,7 +24,12 @@ function WorkExperience({
               :
             </strong>
           </p>
-          <p>{item.description}</p>
+          {item.description.map((line) => (
+            <p key={line}>
+              {'- '}
+              {line}
+            </p>
+          ))}
           {item.stack && item.stack.length && (
             <>
               <br />
@@ -32,8 +37,8 @@ function WorkExperience({
                 {techStack}
                 :
               </p>
-              {item.stack.map((line, index) => (
-                <p key={index}>
+              {item.stack.map((line) => (
+                <p key={line}>
                   {'- '}
                   {line}
                 </p>
