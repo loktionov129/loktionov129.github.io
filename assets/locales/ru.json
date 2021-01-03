@@ -40,7 +40,7 @@
     ],
     "level": {
       "key": "Левел",
-      "value": "Middle"
+      "value": "Senior"
     },
     "english": {
       "key": "Английский",
@@ -173,16 +173,17 @@
     "list": [
       {
         "name": "АО Тинькофф Банк",
-        "specialization": "Full Stack Developer",
+        "specialization": "Senior Full Stack Developer",
         "link": "https://tinkoff.ru/",
         "duration": "Москва, февраль 2019 — наст. время",
         "description": [
           "Проектирование и разработка back-end сервисов с использованием ASP.NET Core.",
           "Разработка общей библиотеки компонентов.",
           "Интеграция с внешними системами.",
-          "Настройка Docker, Kubernetes, CI/CD.",
+          "Настройка CI/CD, внедрение Feature Environment (TeamCity, Docker, Kubernetes).",
           "Code review коллег и подрядчиков.",
-          "Менторинг младшего разработчика."
+          "Менторинг младшего разработчика.",
+          "Декомпозиция сложных задач на более мелкие."
         ],
         "stack": [
           ".NET Core 3.x",

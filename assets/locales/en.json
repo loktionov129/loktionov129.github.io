@@ -40,7 +40,7 @@
     ],
     "level": {
       "key": "Level",
-      "value": "Middle"
+      "value": "Senior"
     },
     "english": {
       "key": "English",
@@ -172,16 +172,17 @@
     "list": [
       {
         "name": "Tinkoff Bank",
-        "specialization": "Full Stack Developer",
+        "specialization": "Senior Full Stack Developer",
         "link": "https://tinkoff.ru/",
         "duration": "Moscow, February 2019 — until now.",
         "description": [
           "Design and development of back-end services using ASP.NET Core.",
           "Developing a shared library of components.",
           "Integration with external systems.",
-          "Configuring Docker, Kubernetes, CI / CD.",
+          "Configuring CI/CD, implementing Feature Environment (TeamCity, Docker, Kubernetes).",
           "Code review of colleagues and contractors.",
-          "Junior developer mentoring."
+          "Junior developer mentoring.",
+          "Decomposition of feature tasks into sub-tasks."
         ],
         "stack": [
           ".NET Core 3.x",
