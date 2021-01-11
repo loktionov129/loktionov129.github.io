@@ -15,7 +15,7 @@
         },
         "age": {
             "key": "Возраст",
-            "birthDate": "1995.10.22"
+            "birthDate": "1995-10-22"
         },
         "city": {
             "key": "Город",
@@ -35,7 +35,7 @@
             {
                 "key": "Почта",
                 "value": "loktionov129@gmail.com",
-                "url": "mailto:oktionov129@gmail.com"
+                "url": "mailto:loktionov129@gmail.com"
             }
         ],
         "level": {

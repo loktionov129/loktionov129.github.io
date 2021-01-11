@@ -15,7 +15,7 @@
         },
         "age": {
             "key": "Age",
-            "birthDate": "1995.10.22"
+            "birthDate": "1995-10-22"
         },
         "city": {
             "key": "Location",
