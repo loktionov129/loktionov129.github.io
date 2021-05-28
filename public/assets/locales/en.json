@@ -60,7 +60,7 @@
         },
         "location": {
             "key": "Work location",
-            "value": "on-site"
+            "value": "remote"
         }
     },
     "keywords": {
@@ -240,10 +240,18 @@
         "techStack": "Technology Stack",
         "list": [
             {
+                "name": "_",
+                "specialization": "Senior Developer",
+                "link": "#",
+                "duration": "Moscow, February 2021 — until now.",
+                "description": [],
+                "stack": []
+            },
+            {
                 "name": "Tinkoff Bank",
-                "specialization": "Senior Full Stack Developer",
+                "specialization": "Senior Developer",
                 "link": "https://tinkoff.ru/",
-                "duration": "Moscow, February 2019 — until now.",
+                "duration": "Moscow, February 2019 — January 2021.",
                 "description": [
                     "Design and development of back-end services using ASP.NET Core.",
                     "Developing a shared library of components.",
@@ -266,7 +274,7 @@
                 "name": "Magora Systems",
                 "specialization": "Backend .NET Developer",
                 "link": "http://magora-systems.com",
-                "duration": "Novosibirsk, August 2018 — February 2019 until now.",
+                "duration": "Novosibirsk, August 2018 — February 2019.",
                 "description": [
                     "Social network development."
                 ],
@@ -296,7 +304,7 @@
                 "name": "Orion Telecom",
                 "specialization": "Full Stack Developer",
                 "link": "https://orionnet.ru/krk",
-                "duration": "Krasnoyarsk, August 2017 – March 2018 г.",
+                "duration": "Krasnoyarsk, August 2017 – March 2018.",
                 "description": [
                     "Development of a CRM system for internal corporate use."
                 ],

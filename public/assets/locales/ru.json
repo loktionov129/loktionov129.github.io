@@ -60,7 +60,7 @@
         },
         "location": {
             "key": "Локация работы",
-            "value": "офис"
+            "value": "удалёнка"
         }
     },
     "keywords": {
@@ -240,10 +240,18 @@
         "techStack": "Технический Стек",
         "list": [
             {
+                "name": "_",
+                "specialization": "Ведущий разработчик",
+                "link": "#",
+                "duration": "Москва, февраль 2021 — наст. время",
+                "description": [],
+                "stack": []
+            },
+            {
                 "name": "АО Тинькофф Банк",
-                "specialization": "Senior Full Stack Developer",
+                "specialization": "Старший разработчик",
                 "link": "https://tinkoff.ru/",
-                "duration": "Москва, февраль 2019 — наст. время",
+                "duration": "Москва, февраль 2019 — январь 2021",
                 "description": [
                     "Проектирование и разработка back-end сервисов с использованием ASP.NET Core.",
                     "Разработка общей библиотеки компонентов.",
@@ -264,7 +272,7 @@
             },
             {
                 "name": "Magora Systems",
-                "specialization": "Backend .NET Developer",
+                "specialization": "Инженер-программист",
                 "link": "http://magora-systems.com",
                 "duration": "Новосибирск, август 2018 г. – февраль 2019",
                 "description": [
@@ -279,7 +287,7 @@
             },
             {
                 "name": "Saritasa",
-                "specialization": "Full Stack Developer",
+                "specialization": "Программист",
                 "link": "https://www.saritasa.com/",
                 "duration": "Красноярск, апрель 2018 г. – август 2018 г.",
                 "description": [
@@ -294,7 +302,7 @@
             },
             {
                 "name": "Орион телеком",
-                "specialization": "Full Stack Developer",
+                "specialization": "Разработчик",
                 "link": "https://orionnet.ru/krk",
                 "duration": "Красноярск, август 2017 г. – март 2018 г.",
                 "description": [
