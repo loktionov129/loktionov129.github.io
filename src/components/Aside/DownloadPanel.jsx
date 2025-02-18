@@ -11,8 +11,7 @@ function DownloadPanel({ locale }) {
             tabIndex="0"
             role="button"
             className="Button secondary"
-            href="/assets/cv.aleksandr_loktionov.net-developer.pdf"
-            download="cv.aleksandr_loktionov.net-developer.pdf"
+            href="https://abakan.hh.ru/resume/de798b26ff08ca01e40039ed1f4c6f53493774?print=true"
           >
             {locale.downloadCv}
           </a>
