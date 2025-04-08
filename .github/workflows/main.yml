@@ -16,7 +16,7 @@ jobs:
         run: yarn install
 
       - name: Next.JS Build
-        run: yarn run next:build
+        run: NODE_OPTIONS=--openssl-legacy-provider yarn run next:build
 
       - name: Next.JS Export
         run: yarn run next:export
