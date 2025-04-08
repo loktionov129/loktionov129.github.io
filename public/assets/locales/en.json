@@ -240,16 +240,28 @@
         "techStack": "Technology Stack",
         "list": [
             {
-                "name": "_",
-                "specialization": "Senior Developer",
-                "link": "#",
-                "duration": "Moscow, February 2021 — until now.",
-                "description": ["N/A"],
-                "stack": ["N/A"]
+                "name": "Lockobank",
+                "specialization": "Senior Backend .NET Developer",
+                "link": "https://www.lockobank.ru/",
+                "duration": "Moscow, February 2021 — April 2025.",
+                "description": [
+                    "Migration of existing services from .NET Framework 4.x to .NET 9",
+                    "Writing new and supporting existing services on .NET 9",
+                    "Implementing integrations with partner APIs",
+                    "Conducting Code Review",
+                    "Participation in the architectural council"
+                ],
+                "stack": [
+                    "C# (.NET 9)",
+                    "PostgreSQL (Entity Framework) - as database per service",
+                    "MS SQL (обертка над ADO.NET) - to communicate with ABS of bank",
+                    "RabbitMQ, Redis",
+                    "GitLab CI, Docker, Docker-swarm"
+                ]
             },
             {
                 "name": "Tinkoff Bank",
-                "specialization": "Senior Developer",
+                "specialization": "Senior Full Stack .NET Developer",
                 "link": "https://tinkoff.ru/",
                 "duration": "Moscow, February 2019 — January 2021.",
                 "description": [
