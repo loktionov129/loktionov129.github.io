@@ -52,7 +52,7 @@
         },
         "salary": {
             "key": "Зарплата (мес.)",
-            "value": "от 3000$"
+            "value": "от 350 000 ₽"
         },
         "employment": {
             "key": "Занятость",
@@ -240,18 +240,30 @@
         "techStack": "Технический Стек",
         "list": [
             {
-                "name": "_",
-                "specialization": "Ведущий разработчик",
-                "link": "#",
-                "duration": "Москва, февраль 2021 — наст. время",
-                "description": ["Не указано"],
-                "stack": ["Не указано"]
+                "name": "ЛОКО-БАНК",
+                "specialization": "Ведущий разработчик (Backend)",
+                "link": "https://www.lockobank.ru/",
+                "duration": "Москва, февраль 2021 г. — апрель 2025 г.",
+                "description": [
+                    "Миграции существующих сервисов с .NET Framework 4.x на .NET 9",
+                    "Написание новых и поддержка существующих сервисов на .NET 9",
+                    "Осуществление интеграций с API партнеров",
+                    "Проведение Code Review",
+                    "Участие в архитектурном совете"
+                ],
+                "stack": [
+                    "C# (.NET 9)",
+                    "PostgreSQL (Entity Framework) - для каждого сервиса своя БД",
+                    "MS SQL (обертка над ADO.NET) - для взаимодействия с АБС банка",
+                    "RabbitMQ, Redis",
+                    "GitLab CI, Docker, Docker-swarm"
+                ]
             },
             {
                 "name": "АО Тинькофф Банк",
-                "specialization": "Старший разработчик",
+                "specialization": "Старший разработчик (Fullstack)",
                 "link": "https://tinkoff.ru/",
-                "duration": "Москва, февраль 2019 — январь 2021",
+                "duration": "Москва, февраль 2019 г. — январь 2021 г.",
                 "description": [
                     "Проектирование и разработка back-end сервисов с использованием ASP.NET Core.",
                     "Разработка общей библиотеки компонентов.",
@@ -272,9 +284,9 @@
             },
             {
                 "name": "Magora Systems",
-                "specialization": "Инженер-программист",
+                "specialization": "Инженер-программист (Backend)",
                 "link": "http://magora-systems.com",
-                "duration": "Новосибирск, август 2018 г. – февраль 2019",
+                "duration": "Новосибирск, август 2018 г. – февраль 2019 г.",
                 "description": [
                     "Разработка социальной сети."
                 ],
@@ -287,7 +299,7 @@
             },
             {
                 "name": "Saritasa",
-                "specialization": "Программист",
+                "specialization": "Программист (Fullstack)",
                 "link": "https://www.saritasa.com/",
                 "duration": "Красноярск, апрель 2018 г. – август 2018 г.",
                 "description": [
@@ -302,7 +314,7 @@
             },
             {
                 "name": "Орион телеком",
-                "specialization": "Разработчик",
+                "specialization": "Разработчик (Fullstack)",
                 "link": "https://orionnet.ru/krk",
                 "duration": "Красноярск, август 2017 г. – март 2018 г.",
                 "description": [
