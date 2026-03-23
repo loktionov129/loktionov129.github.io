@@ -11,7 +11,7 @@ function DownloadPanel({ locale }) {
             tabIndex="0"
             role="button"
             className="Button secondary"
-            href="https://hh.ru/resume/de798b26ff08ca01e40039ed1f4c6f53493774?print=true"
+            href="https://hh.ru/resume/518e3377ff104648720039ed1f683934474548?print=true"
           >
             {locale.downloadCv}
           </a>
