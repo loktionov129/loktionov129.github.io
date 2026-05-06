@@ -76,3 +76,49 @@
 - Developers have access to the necessary tools (Node.js, npm/yarn) for updating dependencies and migrating code.
 - Existing unit tests and integration tests are in place and can be used to verify functionality post-refactor.
 - The project is well-documented with comments and inline documentation where needed.
+
+### Clarification of Ambiguities, Edge Cases, and Potential Risks
+
+#### 1. **Updating Dependencies (FR-001)**
+**Ambiguity**: What constitutes "latest versions"? Should we update to the absolute latest or consider compatibility with other packages?
+**Resolution**: Update dependencies to their latest stable versions that are compatible with each other.
+
+**Edge Case**: Some dependencies might have breaking changes.
+**Risk Mitigation**: Review release notes and changelogs before updating. Use tools like `npm-check-updates` for automated checks.
+
+#### 2. **Migrating from JavaScript to TypeScript (FR-002)**
+**Ambiguity**: How should we handle existing BEM class names in the CSS files?
+**Resolution**: Keep existing BEM classes until they are replaced with TailwindCSS utility-first classes during FR-005.
+
+**Edge Case**: Some components might have complex logic that could be challenging to type.
+**Risk Mitigation**: Gradually migrate components, starting with simpler ones. Use `any` or `unknown` types temporarily if necessary but ensure proper typing is added later.
+
+#### 3. **Transitioning from Next.js Page Routing to App Routing (FR-003)**
+**Ambiguity**: What changes are required in the existing routing logic?
+**Resolution**: Update all route definitions and navigation links to use the new app router syntax.
+
+**Edge Case**: Some routes might have dynamic segments that need special handling.
+**Risk Mitigation**: Ensure proper testing of dynamic routes post-refactor. Use Next.js documentation for guidance on migrating dynamic routes.
+
+#### 4. **Replacing Redux with Zustand (FR-004)**
+**Ambiguity**: How should we handle complex state management logic?
+**Resolution**: Simplify the state management by breaking down large reducers into smaller, more manageable stores in Zustand.
+
+**Edge Case**: Some components might rely heavily on Redux for global state.
+**Risk Mitigation**: Refactor these components to use local state or context where possible. Use Zustand's middleware if needed for complex logic.
+
+#### 5. **Replacing Custom BEM Classes with TailwindCSS (FR-005)**
+**Ambiguity**: How should we handle existing CSS files?
+**Resolution**: Gradually replace BEM classes with Tailwind utility-first classes, ensuring that the UI remains consistent.
+
+**Edge Case**: Some components might have custom styles that are difficult to replicate with Tailwind.
+**Risk Mitigation**: Use `@tailwind base` and extend Tailwind's configuration if necessary. Ensure thorough testing of styled components post-refactor.
+
+### Summary
+- **Dependencies Update (FR-001)**: Update dependencies to latest stable versions, ensuring compatibility.
+- **JavaScript to TypeScript Migration (FR-002)**: Migrate gradually, handling complex logic with temporary types where needed.
+- **Routing Transition (FR-003)**: Update route definitions and navigation links for the new app router syntax.
+- **Redux Replacement (FR-004)**: Simplify state management using Zustand's smaller stores and middleware if necessary.
+- **BEM to TailwindCSS Migration (FR-005)**: Gradually replace BEM classes with Tailwind utility-first classes, ensuring UI consistency.
+
+This clarification should help in addressing potential issues and risks during the refactoring process.
