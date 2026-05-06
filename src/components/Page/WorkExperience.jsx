@@ -24,7 +24,7 @@ function WorkExperience({
               :
             </strong>
           </p>
-          {item.description.map((line) => (
+          {item.responsibilities.map((line) => (
             <p key={line}>
               {'- '}
               {line}

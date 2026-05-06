@@ -1,7 +1,7 @@
 {
   "name": "loktionov129.github.io",
   "author": "Aleksandr Loktionov <loktionov129@gmail.com>",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "private": true,
   "dependencies": {
     "next": "9.5.5",
