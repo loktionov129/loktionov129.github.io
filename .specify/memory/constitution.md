@@ -1,50 +1,112 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
+
+
+# Project Constitution
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. **Principle 1: Code Quality**
+   - Non-negotiable rules:
+     - Follow standard JavaScript conventions (e.g., camelCase, consistent spacing).
+     - Use ESLint for linting as defined in `.eslintrc.json`.
+   - Rationale: Ensures code consistency and maintainability.
+
+2. **Principle 2: Testing**
+   - Non-negotiable rules:
+     - Unit tests are written using Jest.
+     - Integration tests can be added as needed.
+   - Rationale: Provides a robust testing framework to catch bugs early in the development cycle.
+
+3. **Principle 3: Version Control**
+   - Non-negotiable rules:
+     - Use Git for version control.
+     - Follow semantic versioning (MAJOR.MINOR.PATCH).
+   - Rationale: Ensures clear and consistent version tracking.
+
+4. **Principle 4: Dependency Management**
+   - Non-negotiable rules:
+     - Keep dependencies up to date with the latest versions.
+   - Rationale: Ensures security patches, performance improvements, and compatibility with new features.
+
+5. **Principle 5: TypeScript Migration**
+   - Non-negotiable rules:
+     - Migrate from JavaScript (.js/.jsx) to TypeScript (.ts/.tsx).
+   - Rationale: Provides static typing, better tooling support, and improved code reliability.
+
+6. **Principle 6: Routing Update**
+   - Non-negotiable rules:
+     - Transition from Next.js page routing to Next.js app routing.
+   - Rationale: Utilizes the latest features of Next.js for a more modern and efficient application structure.
+
+7. **Principle 7: State Management Refactor**
+   - Non-negotiable rules:
+     - Replace Redux with Zustand for state management.
+   - Rationale: Simplifies state management, reduces boilerplate code, and improves performance.
+
+8. **Principle 8: CSS Framework Update**
+   - Non-negotiable rules:
+     - Transition from custom BEM classes to TailwindCSS v4.
+   - Rationale: Provides utility-first styling, faster development cycles, and consistent design systems.
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- **Amendment Procedure**: Amendments to the constitution must be proposed, reviewed by stakeholders, and approved through a formal process.
+- **Versioning Policy**:
+  - MAJOR: Backward incompatible changes or redefinitions.
+  - MINOR: New principles/sections added or materially expanded guidance.
+  - PATCH: Clarifications, wording, typo fixes, non-semantic refinements.
+- **Compliance Review**: Regular reviews of compliance with the constitution are conducted to ensure adherence to established rules and guidelines.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+## Sync Impact Report
+
+### Version Change
+- Old version: TODO(RATIFICATION_DATE)
+- New version: 1.0.0 (initial draft)
+
+### Modified Principles
+- None yet
+
+### Added Sections
+- Core Principles
+- Governance
+
+### Removed Sections
+- None yet
+
+### Templates Requiring Updates
+- ✅ Updated `.specify/templates/constitution-template.md`
