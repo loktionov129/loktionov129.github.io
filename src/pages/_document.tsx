@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-
 function MetaTags() {
   const title = 'CV - Aleksandr Loktionov (.NET Developer)';
   return (
@@ -58,6 +57,8 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
           rel='stylesheet'
         />
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
+        <link rel='stylesheet' href='/app.css'></link>
         <MetaTags />
         <Icons />
       </Head>

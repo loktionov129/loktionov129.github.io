@@ -1,7 +1,9 @@
 {
-  "header": {
-    "title": "CV — .NET Developer",
+  "aside": {
+    "downloadCv": "Скачать PDF",
+    "lang": "Язык",
     "theme": {
+      "title": "Цветовая Схема",
       "dark": "Тёмная",
       "light": "Светлая"
     }

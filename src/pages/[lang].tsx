@@ -9,7 +9,7 @@ export default function LangPage({ t, lang }: LangContextType) {
 
   return (
     <>
-      <title>{t.header.title}</title>
+      <title>CV — Aleksandr Loktionov</title>
       <Header />
       <main className='container'>
         <br />1

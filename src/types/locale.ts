@@ -1,5 +1,5 @@
 interface ILocale {
-  header: Header;
+  aside: Aside;
   profile: Profile;
   keywords: Keywords;
   aboutApp: AboutApp;
@@ -10,14 +10,16 @@ interface ILocale {
 
 export type Locale = ILocale | null;
 
-export interface Header {
-  title: string;
+export interface Aside {
+  downloadCv: string;
+  lang: string;
   theme: Theme;
 }
 
 export interface Theme {
   dark: string;
   light: string;
+  title: string;
 }
 
 export interface Profile {
