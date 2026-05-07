@@ -1,30 +1,30 @@
 import type { GetStaticProps, GetStaticPaths } from 'next';
 import { createStaticProps } from '@/utils/locale';
 import type { LangContextType } from '@/context';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+import { Profile } from '@/components/Profile';
+import { KeyWords } from '@/components/KeyWords';
+import { WorkExperience } from '@/components/WorkExperience';
+import { ProjectList } from '@/components/ProjectList';
+import { AboutMe } from '@/components/AboutMe';
+import { AboutApp } from '@/components/AboutApp';
 
-export default function LangPage({ t, lang }: LangContextType) {
-  if (!lang || !t) return null;
-
+export default function LangPage() {
   return (
     <>
       <title>CV — Aleksandr Loktionov</title>
-      <Header />
-      <main className='container'>
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-      </main>
-      <Footer />
+      <Profile />
+      <div className='no-print'>
+        <KeyWords />
+        <WorkExperience />
+        <ProjectList />
+        <AboutMe />
+        <AboutApp />
+      </div>
+      <div className='print'>
+        <AboutMe />
+        <ProjectList />
+        <WorkExperience />
+      </div>
     </>
   );
 }

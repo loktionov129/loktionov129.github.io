@@ -1,7 +1,6 @@
-import React from 'react';
-import ProfileInfo from './ProfileInfo';
+import { ProfileInfo } from './ProfileInfo';
 
-export default function ProfilePrintable() {
+export const ProfilePrintable = () => {
   return (
     <div className='Split'>
       <div className='Split__Item'>
@@ -10,4 +9,4 @@ export default function ProfilePrintable() {
       <ProfileInfo />
     </div>
   );
-}
+};

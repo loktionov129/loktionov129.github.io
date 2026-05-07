@@ -1,7 +1,6 @@
-import React from 'react';
-import ProfileInfo from './ProfileInfo';
+import { ProfileInfo } from './ProfileInfo';
 
-export default function ProfileNonPrintable() {
+export const ProfileNonPrintable = () => {
   return (
     <>
       <div className='Center'>
@@ -18,4 +17,4 @@ export default function ProfileNonPrintable() {
       </div>
     </>
   );
-}
+};
