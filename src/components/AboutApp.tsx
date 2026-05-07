@@ -11,7 +11,7 @@ export const AboutApp = () => {
           {t.aboutApp.description}{' '}
           <a href='https://github.com/miyaokamarina/cv'>https://github.com/miyaokamarina/cv</a>
         </p>
-        <p>Built with&nbsp;React, Redux and Next.JS</p>
+        <p>Built with&nbsp;Bun, React, Typescript and Next.JS</p>
       </section>
     )
   );
