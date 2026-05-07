@@ -2982,7 +2982,11 @@
   margin-top: 20px;
   margin-bottom: 26.66666667px;
   background-size: cover;
+<<<<<<< HEAD
   background-image: url('/assets/images/avatar.jpeg');
+=======
+  background-image: url('/avatar.jpeg');
+>>>>>>> e4bba3b748b5bf0dddee64bd189e29057e1a1f1b
 }
 .glow {
   --r: 0;
