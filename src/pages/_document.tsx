@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-const title = 'CV - Aleksandr Loktionov (.NET Developer)';
 
 function MetaTags() {
+  const title = 'CV - Aleksandr Loktionov (.NET Developer)';
   return (
     <>
       <meta httpEquiv='x-ua-compatible' content='ie=edge' />

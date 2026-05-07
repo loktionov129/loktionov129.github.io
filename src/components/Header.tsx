@@ -1,5 +1,4 @@
 'use client';
-
 import Link from 'next/link';
 import { useLang } from '@/hooks';
 import { useEffect, useState } from 'react';
@@ -17,70 +16,65 @@ export const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const navBox =
-    'grid grid-cols-2 rounded-lg border border-border overflow-hidden bg-bg-tertiary w-full md:w-[240px]';
-  const itemBase =
-    'cursor-pointer flex-1 md:flex-none px-4 py-2 text-sm font-medium transition-all duration-200 text-center min-w-[100px]';
-  const active = 'bg-accent-blue text-text-primary shadow-inner';
-  const inactive = 'text-text-secondary hover:bg-accent-blue/10';
+  // Стили контролов: скругленные, компактные, без жестких границ между кнопками
+  const navBox = 'flex p-1 rounded-xl bg-bg-tertiary border border-border w-full md:w-auto';
+  const itemBase = 'flex-1 md:flex-none px-4 py-1.5 text-xs font-semibold transition-all duration-300 rounded-lg text-center whitespace-nowrap min-w-[60px] md:min-w-[80px]';
+  const active = 'bg-bg-primary text-text-primary shadow-sm ring-1 ring-border/50';
+  const inactive = 'text-text-secondary hover:text-text-primary';
 
   return (
-    <header className='w-full border-b border-border bg-bg-secondary relative'>
-      <div className='container mx-auto px-4 py-4 flex flex-wrap justify-between items-center'>
-        {/* Logo */}
-        <h1 className='text-xl md:text-2xl font-bold bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent leading-none'>
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-bg-secondary/80 backdrop-blur-md transition-colors duration-300">
+      <div className="container mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+        
+        {/* Логотип: Увеличил tap-zone для мобилок */}
+        <h1 className="text-xl md:text-2xl font-black bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent tracking-tighter cursor-default">
           {t.header.title}
         </h1>
 
-        {/* Hamburger Button (Mobile Only) */}
-        <button
-          onClick={toggleMenu}
-          className='p-2 md:hidden text-text-primary focus:outline-none'
-          aria-label='Toggle Menu'
+        {/* Бургер: современный минимализм */}
+        <button 
+          onClick={toggleMenu} 
+          className="p-2 md:hidden text-text-primary focus:outline-none"
+          aria-label="Menu"
         >
-          <div className='w-6 h-5 relative flex flex-col justify-between'>
-            <span
-              className={`w-full h-0.5 bg-current transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}
-            />
-            <span
-              className={`w-full h-0.5 bg-current transition-opacity ${isOpen ? 'opacity-0' : ''}`}
-            />
-            <span
-              className={`w-full h-0.5 bg-current transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}
-            />
+          <div className="w-5 h-4 flex flex-col justify-between">
+            <span className={`h-0.5 bg-current transition-all duration-300 origin-left ${isOpen ? 'rotate-[42deg] w-[26px]' : 'w-full'}`} />
+            <span className={`h-0.5 bg-current transition-all duration-300 ${isOpen ? 'opacity-0' : 'w-full'}`} />
+            <span className={`h-0.5 bg-current transition-all duration-300 origin-left ${isOpen ? '-rotate-[42deg] w-[26px]' : 'w-full'}`} />
           </div>
         </button>
 
-        {/* Navigation Wrapper */}
-        <div
-          className={`
-          ${isOpen ? 'flex' : 'hidden'} 
-          md:flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-4 md:mt-0
-        `}
-        >
-          {/* Language Switcher */}
+        {/* Меню: Mobile First - выпадает сверху или плавно проявляется */}
+        <div className={`
+          ${isOpen ? 'flex animate-in fade-in slide-in-from-top-4' : 'hidden'} 
+          md:flex flex-col md:flex-row items-center gap-6 w-full md:w-auto mt-6 md:mt-0
+        `}>
+          
+          {/* Селектор языка */}
           <nav className={navBox}>
-            <Link href='/ru.html' className={`${itemBase} ${lang === 'ru' ? active : inactive}`}>
-              <span className='text-lg leading-none'>🇷🇺</span>
+            <Link href="/ru.html" className={`${itemBase} ${lang === 'ru' ? active : inactive}`}>
+              РУ
             </Link>
-            <Link href='/en.html' className={`${itemBase} ${lang === 'en' ? active : inactive}`}>
-              <span className='text-lg leading-none'>EN</span>
+            <Link href="/en.html" className={`${itemBase} ${lang === 'en' ? active : inactive}`}>
+              EN
             </Link>
           </nav>
 
-          {/* Theme Switcher */}
+          {/* Переключатель темы */}
           <div className={navBox}>
-            <button
-              onClick={() => setTheme('dark')}
-              className={`${itemBase} ${theme === 'dark' ? active : inactive}`}
+            <button 
+              onClick={() => setTheme('dark')} 
+              className={`${itemBase} ${theme === 'dark' ? active : inactive} flex items-center justify-center gap-2`}
             >
-              ☀️ {t.header.theme.dark}
+              <span className="text-[14px]">🌙</span>
+              <span className="hidden sm:inline">{t.header.theme.dark}</span>
             </button>
-            <button
-              onClick={() => setTheme('light')}
-              className={`${itemBase} ${theme === 'light' ? active : inactive}`}
+            <button 
+              onClick={() => setTheme('light')} 
+              className={`${itemBase} ${theme === 'light' ? active : inactive} flex items-center justify-center gap-2`}
             >
-              🌙 {t.header.theme.light}
+              <span className="text-[14px]">☀️</span>
+              <span className="hidden sm:inline">{t.header.theme.light}</span>
             </button>
           </div>
         </div>

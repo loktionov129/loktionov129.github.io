@@ -1,7 +1,8 @@
 import type { GetStaticProps, GetStaticPaths } from 'next';
 import { createStaticProps } from '@/utils/locale';
-import { Header } from '@/components/Header';
 import type { LangContextType } from '@/context';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 export default function LangPage({ t, lang }: LangContextType) {
   if (!lang || !t) return null;
@@ -22,44 +23,8 @@ export default function LangPage({ t, lang }: LangContextType) {
         <br />1
         <br />1
         <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
-        <br />1
       </main>
-      ftr
+      <Footer />
     </>
   );
 }
