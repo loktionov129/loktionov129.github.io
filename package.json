@@ -1,48 +1,48 @@
 {
-    "name": "loktionov129.github.io",
-    "author": "Aleksandr Loktionov <loktionov129@gmail.com>",
-    "version": "3.0.0",
-    "private": true,
-    "devDependencies": {
-        "@eslint/js": "^10.0.1",
-        "@next/eslint-plugin-next": "^16.2.5",
-        "@types/bun": "latest",
-        "@types/react": "19.2.14",
-        "eslint": "^9.18.0",
-        "eslint-config-next": "^16.2.5",
-        "eslint-plugin-react": "^7.37.5",
-        "eslint-plugin-react-hooks": "^7.1.1",
-        "globals": "^17.6.0",
-        "husky": "^9.1.7",
-        "lint-staged": "^17.0.2",
-        "prettier": "3.8.3",
-        "typescript-eslint": "^8.59.2"
-    },
-    "peerDependencies": {
-        "typescript": "^6.0.3"
-    },
-    "dependencies": {
-        "next": "^16.2.5",
-        "react": "^19.2.6",
-        "react-dom": "^19.2.6",
-        "tailwindcss": "^4.2.4",
-        "zustand": "^5.0.13"
-    },
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "lint:fix": "next lint --fix",
-        "prepare": "husky"
-    },
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx}": [
-            "bunx eslint --fix",
-            "prettier --write"
-        ],
-        "*.{json,css,md}": [
-            "prettier --write"
-        ]
-    }
+  "name": "loktionov129.github.io",
+  "author": "Aleksandr Loktionov <loktionov129@gmail.com>",
+  "version": "3.0.0",
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@next/eslint-plugin-next": "^16.2.5",
+    "@types/bun": "latest",
+    "@types/react": "19.2.14",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^16.2.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.2",
+    "prettier": "3.8.3",
+    "typescript-eslint": "^8.59.2"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "next": "^16.2.5",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.2.4",
+    "zustand": "^5.0.13"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "bunx eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
 }
