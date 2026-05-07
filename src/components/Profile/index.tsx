@@ -10,9 +10,9 @@ export const Profile = () => {
         className='Section HeadingSection'
         aria-label={`${t.profile.name.value} CV (${t.profile.specialization.value} Developer)`}
       >
-        <div className='H H_level_1'>
+        <h1 className='H H_level_1'>
           {t.profile.name.value} CV ({t.profile.specialization.value} Developer)
-        </div>
+        </h1>
         <div className='print'>
           <ProfilePrintable />
         </div>

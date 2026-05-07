@@ -6,11 +6,11 @@ export const ProjectList = () => {
   return (
     t && (
       <section className='Section' aria-label={t.projectList.title}>
-        <div className='H H_level_2'>{t.projectList.title}</div>
+        <h2 className='H H_level_2'>{t.projectList.title}</h2>
         <section className='Section'>
           {t.projectList.items.map((item) => (
             <React.Fragment key={item.groupName}>
-              <div className='H H_level_3'>{item.groupName}</div>
+              <h3 className='H H_level_3'>{item.groupName}</h3>
               <ul className='Ul'>
                 {item.projects.map((project) => (
                   <li className='Ul__Item' key={project.name}>

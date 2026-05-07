@@ -6,7 +6,7 @@ export const AboutApp = () => {
   return (
     t && (
       <section className='Section' aria-label={t.aboutApp.title}>
-        <div className='H H_level_2'>{t.aboutApp.title}</div>
+        <h2 className='H H_level_2'>{t.aboutApp.title}</h2>
         <p>
           {t.aboutApp.description}{' '}
           <a href='https://github.com/miyaokamarina/cv'>https://github.com/miyaokamarina/cv</a>

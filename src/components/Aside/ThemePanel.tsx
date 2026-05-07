@@ -15,7 +15,7 @@ export const ThemePanel = () => {
   return (
     t && (
       <section className='Section scheme' aria-label={t.aside.theme.title}>
-        <div className='H H_level_2'>{t.aside.theme.title}</div>
+        <h2 className='H H_level_2'>{t.aside.theme.title}</h2>
         <div className='Buttons primary'>
           <span
             role='button'

@@ -7,7 +7,7 @@ export const LangPanel = () => {
   return (
     t && (
       <section className='Section language' aria-label={t.aside.lang}>
-        <div className='H H_level_2'>{t.aside.lang}</div>
+        <h2 className='H H_level_2'>{t.aside.lang}</h2>
         <nav className='Buttons primary'>
           <Link
             href='/ru.html'

@@ -5,17 +5,17 @@ export const WorkExperience = () => {
   return (
     t && (
       <section className='Section' aria-label={t.workExperience.title}>
-        <div className='H H_level_2'>{t.workExperience.title}</div>
+        <h2 className='H H_level_2'>{t.workExperience.title}</h2>
         {t.workExperience.list.map((item) => (
           <section className='Section' aria-label={item.specialization} key={item.name}>
-            <div className='H H_level_3'>
+            <h3 className='H H_level_3'>
               {item.specialization}
               <div className='Subtitle'>
                 <a href={item.link}>{item.name}</a>
                 {', '}
                 {item.duration}
               </div>
-            </div>
+            </h3>
             <p>
               <strong className='Xps__Strong'>{t.workExperience.responsibilities}:</strong>
             </p>

@@ -5,7 +5,7 @@ export const KeyWords = () => {
   return (
     t && (
       <section className='Section' aria-label={t.keywords.title}>
-        <div className='H H_level_2'>{t.keywords.title}</div>
+        <h2 className='H H_level_2'>{t.keywords.title}</h2>
         <ul className='Chips Buzzwords'>
           {t.keywords.buzzWords.map((item) => (
             <li className={`static Chips__Item ${item.status}`} key={item.name}>

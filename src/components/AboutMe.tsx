@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     t && (
       <section className='Section' aria-label={t.aboutMe.title}>
-        <div className='H H_level_2'>{t.aboutMe.title}</div>
+        <h2 className='H H_level_2'>{t.aboutMe.title}</h2>
         {t.aboutMe.facts.map((fact) => (
           <p key={fact}>
             {'- '}
