@@ -58,7 +58,7 @@ export default function Document() {
           rel='stylesheet'
         />
         {/* eslint-disable-next-line @next/next/no-css-tags */}
-        <link rel='stylesheet' href='/app.css'></link>
+        <link rel='stylesheet' href='/globals.css'></link>
         <MetaTags />
         <Icons />
       </Head>
