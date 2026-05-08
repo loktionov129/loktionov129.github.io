@@ -8,7 +8,7 @@ import LangPage from './[lang]';
 export default function IndexPage(props: LangContextType) {
   if (typeof window !== 'undefined') {
     /* eslint-disable react-hooks/immutability */
-    window.location.href = '/ru.html';
+    window.location.href = '/ru';
   }
   return <LangPage {...props} />;
 }

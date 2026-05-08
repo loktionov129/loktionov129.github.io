@@ -10,7 +10,7 @@ export const LangPanel = () => {
         <h2 className='H H_level_2'>{t.aside.lang}</h2>
         <nav className='Buttons primary'>
           <Link
-            href='/ru.html'
+            href='/ru'
             role='button'
             tabIndex={0}
             className={`Buttons__Item LangSwitcher__Item_lang_ru ${lang === 'ru' ? 'checked' : ''}`}
@@ -18,7 +18,7 @@ export const LangPanel = () => {
             Русский
           </Link>
           <Link
-            href='/en.html'
+            href='/en'
             role='button'
             tabIndex={0}
             className={`Buttons__Item LangSwitcher__Item_lang_en ${lang === 'en' ? 'checked' : ''}`}

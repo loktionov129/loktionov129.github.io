@@ -244,6 +244,9 @@
         "specialization": "Senior Backend .NET Developer",
         "link": "https://www.lockobank.ru/",
         "duration": "Moscow, February 2021 — April 2025.",
+        "description": [
+          "Developing backend services for online banking and a mobile application for legal entities."
+        ],
         "responsibilities": [
           "Migration of existing services from .NET Framework 4.x to .NET 9",
           "Writing new and supporting existing services on .NET 9",
@@ -256,6 +259,7 @@
           "PostgreSQL (Entity Framework) - as database per service",
           "MS SQL (обертка над ADO.NET) - to communicate with ABS of bank",
           "RabbitMQ, Redis",
+          "Jaeger, Graylog",
           "GitLab CI, Docker, Docker-swarm"
         ]
       },
@@ -264,6 +268,7 @@
         "specialization": "Senior Full Stack .NET Developer",
         "link": "https://tinkoff.ru/",
         "duration": "Moscow, February 2019 — January 2021.",
+        "description": ["Worked on a project to develop a cloud call center WebOffice (TWork)."],
         "responsibilities": [
           "Design and development of back-end services using ASP.NET Core.",
           "Developing a shared library of components.",
@@ -287,6 +292,7 @@
         "specialization": "Backend .NET Developer",
         "link": "http://magora-systems.com",
         "duration": "Novosibirsk, August 2018 — February 2019.",
+        "description": [""],
         "responsibilities": ["Social network development."],
         "stack": [".NET Core 2.x", "PostgreSQL", "Firebase", "RabbitMQ"]
       },
@@ -295,6 +301,7 @@
         "specialization": "Full Stack Developer",
         "link": "https://www.saritasa.com/",
         "duration": "Krasnoyarsk, April 2018 — August 2018.",
+        "description": [""],
         "responsibilities": ["Development of a digital platform for restaurants."],
         "stack": [
           "C# / ASP.NET WEB API / WCF",
@@ -308,6 +315,7 @@
         "specialization": "Full Stack Developer",
         "link": "https://orionnet.ru/krk",
         "duration": "Krasnoyarsk, August 2017 – March 2018.",
+        "description": [""],
         "responsibilities": ["Development of a CRM system for internal corporate use."],
         "stack": [
           "Angular",
@@ -317,17 +325,6 @@
           "Bootstrap",
           "Webpack with custom loaders",
           "Laravel / PostgreSQL / RabbitMQ / memcached"
-        ]
-      },
-      {
-        "name": "Freelance",
-        "specialization": "Web Master",
-        "link": "#",
-        "duration": "Krasnoyarsk, February 2016 — August 2017",
-        "responsibilities": [
-          "Development of sites on WordPress.",
-          "Writing markup of PSD layouts / editing of an existing design.",
-          "Setup and configure third-party WordPress plugins."
         ]
       }
     ]

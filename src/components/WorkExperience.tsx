@@ -16,6 +16,7 @@ export const WorkExperience = () => {
                 {item.duration}
               </div>
             </h3>
+            <pre>{item.description?.join('\r\n')}</pre>
             <p>
               <strong className='Xps__Strong'>{t.workExperience.responsibilities}:</strong>
             </p>

@@ -99,6 +99,7 @@ export interface JobExperience {
   specialization: string;
   link: string;
   duration: string;
+  description: string[];
   responsibilities: string[];
   stack: string[];
 }
