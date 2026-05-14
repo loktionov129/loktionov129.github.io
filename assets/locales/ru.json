@@ -285,6 +285,8 @@
           "xUnit / Moq",
           "Entity Framework",
           "Oracle / MongoDB / RabbitMQ",
+          "Teamcity / docker / kubernetes",
+          "ELK / Prometheus / Grafana",          
           "Angular / NgRx",
           "Karma / Jasmine / ts-mockito"
         ]
