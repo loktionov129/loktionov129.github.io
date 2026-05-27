@@ -1,5 +1,12 @@
 # loktionov129.github.io
 
+## О приложении
+Это ремастер проекта https://github.com/miyaokamarina/cv
+
+Built with Bun, React, Typescript and Next.JS
+
+---
+
 To install dependencies:
 
 ```bash
