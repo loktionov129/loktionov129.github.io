@@ -254,7 +254,7 @@
           "PostgreSQL (Entity Framework) - для каждого сервиса своя БД",
           "MS SQL (обертка над ADO.NET) - для взаимодействия с АБС банка",
           "Kafka, Gitlab, k8s, docker, Redis",
-          "Rancher, ArgoCD, Graylog",
+          "Rancher, ArgoCD, Graylog"
         ]
       },      
       {
