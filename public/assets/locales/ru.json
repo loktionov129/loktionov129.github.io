@@ -239,6 +239,25 @@
     "techStack": "Технический Стек",
     "list": [
       {
+        "name": "X",
+        "specialization": "Ведущий разработчик (Backend)",
+        "link": "#",
+        "duration": "Москва, июнь 2026 г. — наст. время",
+        "description": [
+          "X."
+        ],
+        "responsibilities": [
+          "X"
+        ],
+        "stack": [
+          "C# (.NET 10)",
+          "PostgreSQL (Entity Framework) - для каждого сервиса своя БД",
+          "MS SQL (обертка над ADO.NET) - для взаимодействия с АБС банка",
+          "Kafka, Gitlab, k8s, docker, Redis",
+          "Rancher, ArgoCD, Graylog",
+        ]
+      },      
+      {
         "name": "ЛОКО-БАНК",
         "specialization": "Ведущий разработчик (Backend)",
         "link": "https://www.lockobank.ru/",
