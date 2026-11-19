@@ -240,10 +240,28 @@
     "techStack": "Technology Stack",
     "list": [
       {
+        "name": "X",
+        "specialization": "Lead Backend .NET Developer",
+        "link": "#",
+        "duration": "Moscow, June 2026 — present.",
+        "description": [
+          "X."
+        ],
+        "responsibilities": [
+          "X"
+        ],
+        "stack": [
+          "C# (.NET 10)",
+          "PostgreSQL (Entity Framework) - as database per service",
+          "Kafka, Gitlab, k8s, docker, Redis",
+          "Rancher, ArgoCD, Graylog"
+        ]
+      },           
+      {
         "name": "Lockobank",
         "specialization": "Senior Backend .NET Developer",
         "link": "https://www.lockobank.ru/",
-        "duration": "Moscow, February 2021 — present.",
+        "duration": "Moscow, February 2021 — April 2026.",
         "description": [
           "Developing backend services for online banking and a mobile application for legal entities."
         ],
